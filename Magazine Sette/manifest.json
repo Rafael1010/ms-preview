@@ -1,0 +1,8 @@
+{
+    "name": "Magazine Sette",
+    "author": "Rafael dos Santos",
+    "version": "1.0",
+    "date": "26/01/2023",
+    "price": "8.700",
+    "compatibility": ["explorer", "harmonia"]
+}
