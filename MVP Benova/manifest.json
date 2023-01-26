@@ -4,5 +4,6 @@
     "version": "1.0",
     "date": "12/01/2023",
     "price": "7.400",
-    "compatibility": ["explorer"]
+    "base": "harmonia",
+    "compatibility": ["harmonia"]
 }

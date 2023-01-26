@@ -1,9 +1,9 @@
 {
-    "name": "Magazine Sette",
+    "name": "Ateni",
     "author": "Rafael dos Santos",
     "version": "1.0",
     "date": "26/01/2023",
-    "price": "8.700",
+    "price": "8.300",
     "base": "explorer",
     "compatibility": ["explorer", "harmonia"]
 }
