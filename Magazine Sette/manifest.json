@@ -7,7 +7,6 @@
     "base": "explorer",
     "compatibility": ["explorer", "harmonia"],
     "dependencies": [
-        "ms-apps-categoryFeed",
-        "ms-apps-countdown"
+        "ms-apps-categoryFeed"
     ]
 }

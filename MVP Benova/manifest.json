@@ -6,5 +6,8 @@
     "price": "7.400",
     "base": "harmonia",
     "compatibility": ["harmonia"],
-    "dependencies": ["ms-apps-categoryFeed", "ms-apps-countdown"]
+    "dependencies": [
+        "ms-apps-categoryFeed", 
+        "ms-apps-countdown"
+    ]
 }
