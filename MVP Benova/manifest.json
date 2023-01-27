@@ -5,5 +5,9 @@
     "date": "12/01/2023",
     "price": "7.400",
     "base": "harmonia",
-    "compatibility": ["harmonia"]
+    "compatibility": ["harmonia"],
+    "dependencies": [
+        "ms-apps-categoryFeed",
+        "ms-apps-countdown"
+    ]
 }
