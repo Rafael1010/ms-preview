@@ -1,0 +1,475 @@
+/* (home) version: 1.0.1 */
+
+
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@400;700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@400;700&family=Assistant:wght@400;700&family=Asap:wght@400;700&family=Cardo:wght@400;700&family=DM+Sans:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Comfortaa:wght@400;700&family=Bitter:wght@400;700&family=EB+Garamond:wght@400;700&family=Manrope:wght@400;700&family=Quattrocento+Sans:wght@400;700&family=Taviraj:wght@400;700&family=Oswald:wght@400;700&family=Plus+Jakarta+Sans:wght@400;700&family=Raleway:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Rubik:wght@400;600&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+    
+
+    .body {
+      font-family: 'DM Sans' !important;
+    }
+
+    .shops__background--primary-color {
+      background-color: #f9f2c8 !important;
+    }
+
+    .shops__background--secondary-color {
+      background-color: #00a650 !important;
+    }
+
+    .shops__background--tertiary-color {
+      background-color: #ffcc00 !important;
+    }
+
+    .shops--primary-font {
+      font-family:  DM Sans !important;
+    }
+
+    .shops--secondary-font {
+      font-family: DM Sans !important;
+    }
+
+    .nav-header,
+    .side-drawer__title {
+        background: #f9f2c8;
+        border-color: #f9f2c8;
+    }
+
+
+    .nav-header__hamburger {
+        background: #00519a !important;
+    }
+
+    .nav-list--horizontal > .nav-list__item > .nav-list__link {
+        color: #00519a !important;
+    }
+
+    .nav-list__item--more:after,
+    .nav-list--horizontal > .nav-list__item:not(:last-child):not(:last-child):after {
+        border-color: #000000 !important;
+    }
+
+    .nav-header__logo,
+    .nav-header__nav-link .nav-header__nav-icon:before,
+    .nav-icon-cart:before,
+    .nav-cart .nav-icon-cart-quantity {
+        color: #000000 !important;
+    }
+
+    .nav-header__separator,
+    .nav-cart:before,
+    .nav-header__nav-link:before {
+        border-color: #000000 !important;
+        opacity: 0.1;
+    }
+
+    /* Hide QR Afip (todo: don't do it by style but by removing the element) */
+    footer .nav-footer-disclaimer a[href="null"] {
+        display: none;
+    }
+
+    /* New Classes for templates */
+    .header--custom-background {
+        background: #f9f2c8 !important;
+        border-color: #f9f2c8 !important;
+    }
+
+    .header--custom-title {
+        color: #f9f2c8 !important;
+    }
+
+    .header--custom-title-container {
+            background-color: #000000 !important;
+            color: #f9f2c8
+    }
+
+
+    .icon--custom-color {
+      fill: #f9f2c8 !important;
+    }
+
+    .discovery--custom-label-image-gradient {
+      background: linear-gradient(to top, rgba(249,242,200,0.05), transparent)
+    }
+
+    .header--custom-text {
+        color: #00519a !important;
+    }
+
+    .header--custom-svg {
+        fill: #00519a !important;
+    }
+
+    .header--custom-border {
+        border-color: #000000 !important;
+    }
+
+
+    .header--custom-secondary-background {
+        background-color: #e7cb22 !important;
+    }
+
+    .header--custom-secondary-text, .flash-component__link {
+        color: #333 !important;
+    }
+
+
+    .header--custom-text a {
+      color: #00519a !important;
+    }
+    .header--custom-border.nav-list--horizontal>.nav-list__item:not(:last-child):not(:last-child):after {
+      border-color: #000000 !important;
+    }
+
+    /* Search box looks bad on white headers (white border - white background). We need to force gray. */
+    
+        .search-box-container {
+        border: 1px solid #cccccc
+        }
+    
+
+    .header--custom-border:hover {
+        border-color: #000000 !important;
+    }
+
+    .ui-button--primary, .andes-button--loud {
+        background-color: #f9f2c8 !important;
+        color: #000000 !important;
+    }
+
+    button.andes-button--quiet {
+        background-color: #ffffff !important;
+        border: 2px solid #f9f2c8 !important;
+        color: #000000 !important;
+    }
+
+    .ui-pdp-color--GREEN, .item__shipping-info__label, .summary__price-epigraph--green, .item__discount-rate, .ui-search-item__shipping--free,.ui-search-color--LIGHT_GREEN, .ui-search-price__discount{
+        color: #000000 !important;
+        fill: #000000 !important;
+    }
+
+
+    .ui-search-item__shipping {
+        color: #ffcc00 !important;
+    }
+
+    .ui-search-item__group__element {
+        color: #000000 !important;
+    }
+
+    .ui-search-price__second-line {
+        color: #ffcc00 !important;
+    }
+
+
+    /* Envios Gratis Label */
+    .ui-search-item__shipping {
+        color: #ffcc00 !important;
+    }
+
+
+    .item__shipping-info__label
+    {
+    color: #ffcc00 !important;
+    }
+
+
+    /*Links*/
+    .ui-pdp-container__row--payment-methods .ui-pdp-action-modal__link{
+        color: #74A8ED !important;
+    }
+
+    .item__description .item__change_variation{
+        color: #74A8ED !important;
+    }
+
+    form[data-action=remove-from-cart] .u-link
+    {
+        color: #74A8ED !important;
+    }
+
+    .item__action-menu .item__action-menu-link:nth-child(1)
+    {
+    color: #74A8ED !important;
+    }
+
+    /* Discount */
+    .cart__list .item__discount-rate {
+        color: #00a650 !important;
+    }
+
+    .ui-item__discount-box{
+        background: #00a650 !important;
+        border-color: #00a650 !important;
+        color: #000000 !important;
+    }
+
+    .ui-item__discount-box .nav-header__logo {
+        color: #000000 !important;
+    }
+
+    /* Precios */
+    .price-tag-fraction:not(.price-tag__disabled), .price-tag-symbol {
+        color: #000000 !important;
+    }
+
+    .price-tag-cents {
+        color: #000000 !important;
+    }
+
+    .ui-item__material-price-block .price-tag__disabled span {
+        color: #000000 !important
+    }
+
+    .ui-item__shipping-free svg,
+    .ui-item__shipping-free span
+    {
+        color: #ffcc00 !important;
+        fill: #ffcc00 !important;
+    }
+
+    .ui-pdp-generic-summary .ui-pdp-media__title span
+    {
+        color: #000000 !important;
+    }
+
+    .ui-search-item__title{
+        color: #000000 !important;
+    }
+
+    .ui-pdp-price__original-value{
+        color: #000000 !important;
+    }
+
+    .ui-item__discount-text{
+        color: #00a650 !important;
+    }
+
+    .ui-item__price-block .ui-item__discount-price .price-tag-symbol,
+    .ui-item__price-block .ui-item__discount-price .price-tag-fraction
+    {
+        color: #000000 !important;
+    }
+
+    .ui-item__title {
+        color: #000000 !important;
+    }
+
+
+    /*Calcular color de texto en botones*/
+    .andes-button--loud .andes-button__content {
+        color: #00519a !important;
+    }
+
+    .andes-button--quiet .andes-button__content{
+        color: #000000 !important;
+    }
+
+    /*Estilo para loader del botón comprar ahora*/
+    .shops-pdp-container .ui-pdp-container__row--main-actions .ui-pdp-actions__container--featured .andes-button--loud .andes-progress-indicator-circular__svg,
+    .shops-pdp-container--top .ui-pdp-container__row--main-actions .ui-pdp-actions__container--featured .andes-button--loud .andes-progress-indicator-circular__svg {
+        stroke: #00519a !important;
+    }
+
+    /*Estilo para loader del botón agregar al carrito*/
+    .shops-pdp-container .ui-pdp-container__row--main-actions .ui-pdp-actions__container--featured .andes-button--quiet .andes-progress-indicator-circular__svg,
+    .shops-pdp-container--top .ui-pdp-container__row--main-actions .ui-pdp-actions__container--featured .andes-button--quiet .andes-progress-indicator-circular__svg {
+        stroke: #000000 !important;
+    }
+
+    .nav-default-header{
+        font-family: 'DM Sans' !important;
+    }
+
+    .ui-item__wrapper {
+        font-family: 'DM Sans' !important;
+    }
+
+    .nav-fashion-header__logo{
+         font-family: 'DM Sans' !important;
+    }
+
+    .item-description {
+        font-family: 'DM Sans' !important;
+    }
+
+    .card-with-image-price__text-content{
+        font-family: 'DM Sans' !important;
+    }
+
+
+    .carousel__item__2, .carousel__item, .banner-text__title, .banner-text__link{
+        font-family: 'DM Sans' !important;
+    }
+
+    #section-info .site-shopping-info .container .info-slide{
+        font-family: 'DM Sans' !important;
+    }
+
+    .legend-footer-contact{
+
+        font-family: 'DM Sans' !important;
+    }
+
+    .ui-search-layout__item{
+        font-family: 'DM Sans' !important;
+    }
+
+    .ui-search-filter-dl, .ui-search-item__title, .ui-search-item__group__element--shipping, .ui-search-item__group--price{
+        font-family: 'DM Sans' !important;
+    }
+
+    .ui-search-filter-container .ui-search-button-link .ui-search-filter-name, .ui-search-filter-container .ui-search-button-link .ui-search-filter-results-qty {
+        font-family: 'DM Sans' !important;
+    }
+
+    .header--custom-text {
+        font-family: 'DM Sans' !important;
+    }
+
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body h5 {
+      font-family: 'DM Sans' !important;
+    }
+
+    main[role=main] {
+      font-family: 'DM Sans' !important;
+    }
+
+    .payment-data .payment-data-subtitle a, .section-header a, .andes-breadcrumb__link, .ui-pdp-action-modal__link,
+    .ui-pdp-share .andes-tooltip__trigger .andes-button .andes-button__content,
+    .ui-pdp-family--REGULAR a, .ui-pdp-collapsable__action {
+      color: #74A8ED !important;
+    }
+
+    .header--custom-secondary-background {
+        background: #ffcc00 !important;
+        color: #000000 !important;
+    }
+
+    .header--custom-secondary-text, .flash-component__link, .header-wrapper .flash-component a {
+        color: #000000 !important;
+    }
+
+    .header-wrapper .flash-component a, .header-wrapper .flash-component h3 {
+        font-family: 'DM Sans' !important;
+    }
+
+    .dragable-component__wrapper {
+        background: #3483fa !important;
+    }
+
+    
+
+
+    .font-primary-text {
+        font-family: 'DM Sans' !important;
+    }
+
+    .font-secondary-text {
+        font-family: 'DM Sans' !important;
+    }
+
+
+
+
+
+
+
+
+
+    
+
+    .highlighted-specs-title{
+        color: #000000 !important;
+        font-family: 'DM Sans'' !important;
+    }
+
+    .ui-pdp-description__title {
+        color: #000000 !important;
+         font-family: 'DM Sans'' !important;
+    }
+
+    .ui-recommendations__header__title {
+        color: #000000 !important;
+        font-family: 'DM Sans'' !important;
+    }
+
+    .payment-data-title {
+        color: #000000 !important;
+        font-family: 'DM Sans' !important;
+    }
+
+    .title, price-and-image__title, .section-header, .tabs-list__item {
+        font-family: 'DM Sans' !important;
+    }
+
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body h5 {
+      font-family: 'DM Sans' !important;
+    }
+
+    .column-discovery__title, .label-image__text, .section-text___title  {
+        font-family: 'DM Sans' !important;
+    }
+
+    .video-and-text, .content-element__description, .content-element__button-text, .ui-item__wrapper, .ui-item__title, .price-tag-fraction, .section-text__text, .section-text__row-buttons-actions__btn-action-user--default,
+    .slide__heading,
+    .slide__subtitle,
+    .section-header a,
+    .tabs-list__item {
+        font-family: 'DM Sans' !important;
+    }
+
+    .editable-wrapper .editable-button{
+        background: #3483fa !important;
+        color: #fff !important;
+    }
+
+    .editable-wrapper .editable-button .andes-button__text{
+        color: #fff !important;
+    }
+
+    .section-text__row-buttons-actions__btn-action-user--default {
+        background: #f9f2c8 !important;
+        border-color: #f9f2c8 !important;
+        color: #00519a !important;
+    }
+
+    .section-text__row-buttons-actions__btn-action-user--default span {
+        color: #00519a !important;
+    }
+
+    .hub__boxed-width .content .banner-text__content .banner-text__title {
+         font-family: 'DM Sans' !important;
+    }
+
+    .hub__boxed-width .content .banner-text__content .banner-text__link:not(:empty) {
+        font-family: 'DM Sans' !important;
+    }
+
+    .home:not(.home--custom-html) .ui-item__content .ui-item__shipping-free span {
+      color: #000000 !important;
+    }
+
+    .home:not(.home--custom-html) .ui-item__content .ui-item__shipping {
+      background-color: #ffcc00 !important;
+    }
+
+    .home:not(.home--custom-html) .ui-item__content .ui-item__shipping-icon path {
+      fill: #000000 !important;
+    }
+
+
+
+
+/* home_deco  home*/
