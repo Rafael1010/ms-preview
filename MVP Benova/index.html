@@ -35,7 +35,9 @@
 
       //Verifica se inserção de CDN dos APPs
       else if(data.type == "cdn") {
+        console.log("É CDN.")
         data.data.forEach(function(indice, item){
+          console.log("Item", item)
           var componente = document.createElement("script");
           componente.type= "text/javascript";
           componente.src = item.cdn;
