@@ -46,14 +46,14 @@
           componente.setAttribute("defer", "");
           document.body.appendChild(componente);
 
-          //Adiciona o codenome do app encontrado na variavel apps
-          let quantity = document.querySelectorAll(item.codenome).length;
-          apps[item.codenome] = {
-            codenome: item.codenome,
+          //Adiciona o codename do app encontrado na variavel apps
+          let quantity = document.querySelectorAll(item.codename).length;
+          apps[item.codeame] = {
+            codename: item.codename,
             quantity: quantity
           }
 
-          console.log("apps", apps, "codenome", item.codenome)
+          console.log("apps", apps, "codennme", item.codename)
         })
 
         //envia para a página que esta puxando o iframe a quantidade de cada app encontrado na página
