@@ -36,7 +36,7 @@
       //Verifica se inserção de CDN dos APPs
       else if(data.type == "cdn") {
 
-        let apps = {};
+        var apps = {};
         console.log("É CDN.")
         data.data.forEach(function(item, indice){
           console.log("Item", item)
@@ -68,7 +68,6 @@
   }
 
   getMessage()
-  sendMessage()
 
 
 
