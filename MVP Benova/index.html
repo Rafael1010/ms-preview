@@ -35,6 +35,8 @@
 
       //Verifica se inserção de CDN dos APPs
       else if(data.type == "cdn") {
+
+        let apps = {};
         console.log("É CDN.")
         data.data.forEach(function(item, indice){
           console.log("Item", item)
@@ -43,14 +45,30 @@
           componente.src = item.cdn;
           componente.setAttribute("defer", "");
           document.body.appendChild(componente);
+
+          //Adiciona o codenome do app encontrado na variavel apps
+          let quantity = document.querySelectorAll(item.codenome).length;
+          apps[item.codenome] = {
+            codenome: item.codenome,
+            quantity: quantity
+          }
         })
+
+        //envia para a página que esta puxando o iframe a quantidade de cada app encontrado na página
+        sendMessage(apps)
+
       }
 
 
     })
   }
 
+  function sendMessage(apps) {
+    window.parent.postMessage(apps, "*")
+  }
+
   getMessage()
+  sendMessage()
 
 
 
