@@ -50,7 +50,8 @@
           let quantity = document.querySelectorAll(item.codename).length;
           apps[item.codename] = {
             codename: item.codename,
-            quantity: quantity
+            quantity: quantity,
+            ...item
           }
 
           console.log("apps", apps, "codename", item.codename)
