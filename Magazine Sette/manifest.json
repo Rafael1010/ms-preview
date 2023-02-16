@@ -6,7 +6,6 @@
     "date": "26/01/2023",
     "price": "8.700",
     "base": "explorer",
-    "compatibility": ["explorer", "harmonia"],
     "dependencies": [
         "ms-apps-categoryFeed"
     ]
