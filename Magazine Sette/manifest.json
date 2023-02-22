@@ -12,18 +12,27 @@
     "colors": {
         "*": {
             "Cabeçalho": {
+                "Logo": {
+                    "location": ".nav-default-header",
+                    "background":"#000000"
+                },
                 "Menu": {
+                    "location": ".categories-container",
                     "color": "#440ca2",
                     "background":"#000000"
                 }
             },
             "Rodapé": {
                 "Rodape": {
+                    "location": ".footer",
                     "color": "#000000"
                 }
             },
             "Miolo": {
-
+                "Banner principal": {
+                    "location": ".payment-data-title",
+                    "color": "#069"
+                }
             }
         },
         "home": {
