@@ -10,7 +10,7 @@
         "ms-apps-categoryFeed"
     ],
     "colors": {
-        "*": {
+        "default": {
             "Logo": {
                 "target": ".nav-default-header",
                 "background":"#000000"
