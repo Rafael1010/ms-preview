@@ -31,8 +31,16 @@
             }
         },
         "home": {
+            "Banner secundario": {
+                "target": ".payment-data-titlee",
+                "color": "#374e89"
+            }
         },
         "category": {
+            "Banner de exemplo": {
+                "target": ".payment-data-titleee",
+                "color": "#ed4343"
+            }
         },
         "product": {
         }
