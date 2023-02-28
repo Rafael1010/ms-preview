@@ -12,62 +12,29 @@
     ],
     "colors": {
         "*": {
-            "Cabeçalho": {
-                "Logo": {
-                    "target": ".nav-default-header",
-                    "background":"#000000"
-                },
-                "Menu": {
-                    "target": ".categories-container",
-                    "color": "#440ca2",
-                    "background":"#000000"
-                }
+            "Logo": {
+                "target": ".nav-default-header",
+                "background":"#000000"
             },
-            "Rodapé": {
-                "Rodape": {
-                    "target": ".footer",
-                    "color": "#000000"
-                }
+            "Menu": {
+                "target": ".categories-container",
+                "color": "#440ca2",
+                "background":"#000000"
             },
-            "Miolo": {
-                "Banner principal": {
-                    "target": ".payment-data-title",
-                    "color": "#069"
-                }
+            "Rodape": {
+                "target": ".footer",
+                "color": "#000000"
+            },
+            "Banner principal": {
+                "target": ".payment-data-title",
+                "color": "#069"
             }
         },
         "home": {
-            "Cabeçalho": {
-
-            },
-            "Rodapé": {
-
-            },
-            "Miolo": {
-                
-            }
         },
         "category": {
-            "Cabeçalho": {
-
-            },
-            "Rodapé": {
-
-            },
-            "Miolo": {
-                
-            }
         },
         "product": {
-            "Cabeçalho": {
-
-            },
-            "Rodapé": {
-
-            },
-            "Miolo": {
-                
-            }
         }
     }
 }
