@@ -8,6 +8,7 @@
     window.addEventListener("message",(e)=>{
 
       const data = JSON.parse(e.data);
+      console.log("Data recebida: ", data)
 
       //Verifica se é atualização de categorias
       if(data.type == "category") {
@@ -21,6 +22,7 @@
 
       //Caso seja alteração de cores
       else if(data.type == "colors") {
+        console.log("É cores")
         alteraCores(data.data);
       }
 
