@@ -17,7 +17,7 @@
                 "background":"#000000"
             },
             "Menu": {
-                "target": ".categories-item__geral navbar",
+                "target": ".categories-container",
                 "color": "#440ca2",
                 "background":"#000000"
             },
