@@ -17,23 +17,25 @@
                 "background":"#000000"
             },
             "Menu": {
-                "target": ".categories-container",
+                "target": ".categories-item__geral navbar",
                 "color": "#440ca2",
                 "background":"#000000"
             },
             "Rodape": {
-                "target": ".footer",
-                "color": "#000000"
+                "target": "footer.legend-footer-contact-container",
+                "color": "#000000",
+                "background": "#253140"
             },
-            "Banner principal": {
-                "target": ".payment-data-title",
-                "color": "#069"
+            "Feed de categorias": {
+                "target": ".category-feed",
+                "color": "#000",
+                "background": "#fff"
             }
         },
         "home": {
-            "Banner secundario": {
-                "target": ".payment-data-titlee",
-                "color": "#374e89"
+            "Carrossel de beneficios": {
+                "target": ".topHeader__wrapper",
+                "background": "#FFD500"
             }
         },
         "category": {
