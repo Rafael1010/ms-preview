@@ -12,7 +12,7 @@
     ],
     "colors": {
         "default": {
-            "Logo": {
+            "Cabeçalho": {
                 "target": ".nav-default-header",
                 "background":"#000000"
             },
