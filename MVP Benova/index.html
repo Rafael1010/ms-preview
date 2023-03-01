@@ -57,9 +57,9 @@
 
   function alteraCores(data) {
       //Remove estilos anteriores
-      document.querySelectorAll(".estyles-theme")[0]?.remove();
+      document.querySelectorAll(".styles-theme")[0]?.remove();
 
-      var styles = `<style class="estyles-theme">`;
+      var styles = `<style class="styles-theme">`;
       Object.keys(data.colors).forEach(pagina => {
           Object.keys(data.colors[pagina]).forEach(titulo => {
           //Titulo principal
