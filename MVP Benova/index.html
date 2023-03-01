@@ -69,10 +69,10 @@
               Object.keys(data.colors[pagina][titulo]).forEach(itens => {
                   
                   if(itens == "color") {
-                      styles += `color: ${data.colors[pagina][titulo][itens]};`
+                      styles += `color: ${data.colors[pagina][titulo][itens]} !important;`
                   }
                   else if(itens == "background") {
-                      styles += `background-color: ${data.colors[pagina][titulo][itens]};`
+                      styles += `background-color: ${data.colors[pagina][titulo][itens]} !important;`
                   }
               })
               styles += `}`;
