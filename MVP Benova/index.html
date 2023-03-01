@@ -26,6 +26,12 @@
         alteraCores(data.data);
       }
 
+      //Caso seja alteração de apps (atualiza os atributos)
+      else if(data.type == "apps") {
+        console.log("São apps", data.data)
+        alteraCores(data.data);
+      }
+
     })
   }
 
