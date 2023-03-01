@@ -2,22 +2,6 @@
 
 
 <script>
-  alteraCores();
-  function alteraCores() {
-      //Edita cor do menu
-      document.querySelector(".categories-container")?.setAttribute("style", "background: "+localStorage.getItem("cor--menu"))
-  
-      //Edita cor icones
-      document.querySelectorAll(".nav-button").forEach((e)=>{
-          e.setAttribute("style", "background: "+localStorage.getItem("cor--icones"))
-      })
-  }
-  
-  window.addEventListener("storage", function () {
-    console.log("OK")
-      alteraCores();
-  }, false);
-
 
   function getMessage() {
 
@@ -25,21 +9,31 @@
 
       const data = JSON.parse(e.data);
 
-      console.log("data...", data)
-
       //Verifica se é atualização de categorias
       if(data.type == "category") {
         document.querySelector(".navbar").innerHTML = data.data;
-        console.log("Atualiza categrias")
       }
 
-      //Verifica se inserção de CDN dos APPs
+      //Verifica se inserção de CDN
       else if(data.type == "cdn") {
+        insereCDN(data);
+      }
 
-        var apps = {};
-        console.log("É CDN.")
+      //Caso seja alteração de cores
+      else if(data.type == "colors") {
+        alteraCores(data.data);
+      }
+
+    })
+  }
+
+  function sendMessage(apps) {
+    window.parent.postMessage(apps, "*")
+  }
+
+  function insereCDN(data) {
+    var apps = {};
         data.data.forEach(function(item, indice){
-          console.log("Item", item)
           var componente = document.createElement("script");
           componente.type= "text/javascript";
           componente.src = item.cdn;
@@ -59,27 +53,39 @@
 
         //envia para a página que esta puxando o iframe a quantidade de cada app encontrado na página
         sendMessage(JSON.stringify(apps))
-
-      }
-
-
-    })
   }
 
-  function sendMessage(apps) {
-    console.log("testando: ", apps)
-    window.parent.postMessage(apps, "*")
+  function alteraCores(data) {
+      //Remove estilos anteriores
+      document.querySelectorAll(".estyles-theme")[0]?.remove();
+
+      var styles = `<style class="estyles-theme">`;
+      Object.keys(data.colors).forEach(pagina => {
+          Object.keys(data.colors[pagina]).forEach(titulo => {
+          //Titulo principal
+
+              let identificador = data.colors[pagina][titulo]?.target;
+              styles += `${identificador} {`
+              Object.keys(data.colors[pagina][titulo]).forEach(itens => {
+                  
+                  if(itens == "color") {
+                      styles += `color: ${data.colors[pagina][titulo][itens]};`
+                  }
+                  else if(itens == "background") {
+                      styles += `background-color: ${data.colors[pagina][titulo][itens]};`
+                  }
+              })
+              styles += `}`;
+          })      
+      })
+      styles += `</style>`;
+
+      //Adiciona os estilos a página
+      document.body.insertAdjacentHTML("beforeend", styles);
   }
 
+  //Inicia
   getMessage()
-
-
-
-  // window.addEventListener('message', function(event) {
-  //   console.log("Message received from the parent: " + event.data); // Message received from parent
-  // });
-
-
 
   </script>
 
