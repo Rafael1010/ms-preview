@@ -28,9 +28,9 @@
 
       //Caso seja alteração de apps (atualiza os atributos)
       else if(data.type == "apps") {
-        Object.keys(data.data.atributos).forEach(item => {
+        Object.keys(data.atributos).forEach(item => {
           let target = document.querySelectorAll(data["data-name"])[data["index"]]
-          target.setAttribute(item, data.data.attributes[item])
+          target.setAttribute(item, data.attributes[item])
 
           console.log("Target", target)
         })
