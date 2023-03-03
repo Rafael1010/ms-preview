@@ -13,16 +13,16 @@
     "colors": {
         "default": {
             "Cabeçalho": {
-                "target": ".nav-default-header",
+                "target": ".HeaderCustomHtml",
                 "background":"#000000"
             },
             "Menu": {
-                "target": ".categories-container",
+                "target": ".categories-item__geral",
                 "color": "#440ca2",
                 "background":"#000000"
             },
             "Rodape": {
-                "target": "footer.legend-footer-contact-container",
+                "target": ".legend-footer-contact-container",
                 "color": "#000000",
                 "background": "#253140"
             },
@@ -34,7 +34,7 @@
         },
         "home": {
             "Carrossel de beneficios": {
-                "target": ".topHeader__wrapper",
+                "target": ".flash-component",
                 "background": "#FFD500"
             }
         },
