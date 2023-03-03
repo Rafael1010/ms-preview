@@ -1,0 +1,50 @@
+{
+    "name": "Dalore",
+    "author": "Iasmin",
+    "description": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque efficitur odio nec orci laoreet euismod. Nam sagittis nisi quam, nec commodo nibh egestas ut. Vestibulum id maximus mauris, id laoreet nunc. Aenean vehicula vulputate est nec ullamcorper. Cras varius ornare posuere. Aenean vestibulum non eros ut varius. Vestibulum quis magna accumsan, accumsan erat in, sodales nulla. Proin vel auctor nisi.",
+    "version": "1.0",
+    "date": "12/01/2023",
+    "price": "7.400",
+    "base": "harmonia",
+    "dependencies": [
+        "ms-apps-categoryFeed", 
+        "ms-apps-countdown"
+    ],
+    "colors": {
+        "default": {
+            "Cabeçalho": {
+                "target": ".nav-default-header",
+                "background":"#000000"
+            },
+            "Menu": {
+                "target": ".categories-container",
+                "color": "#440ca2",
+                "background":"#000000"
+            },
+            "Rodape": {
+                "target": "footer.legend-footer-contact-container",
+                "color": "#000000",
+                "background": "#253140"
+            },
+            "Feed de categorias": {
+                "target": ".category-feed",
+                "color": "#000",
+                "background": "#fff"
+            }
+        },
+        "home": {
+            "Carrossel de beneficios": {
+                "target": ".topHeader__wrapper",
+                "background": "#FFD500"
+            }
+        },
+        "category": {
+            "Banner de exemplo": {
+                "target": ".payment-data-titleee",
+                "color": "#ed4343"
+            }
+        },
+        "product": {
+        }
+    }
+}

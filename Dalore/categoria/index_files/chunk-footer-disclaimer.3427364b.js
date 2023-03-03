@@ -1,0 +1,2 @@
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[7630],{32052:function(_,s,e){var t=e(98135),a=(e(67294),e(45697).string,"ui-search-footer-disclaimer");_.exports=function(_){var s=_.text;return t("span",{className:a},void 0,t("p",{className:"".concat(a,"__text")},void 0,s))}}}]);
+//# sourceMappingURL=chunk-footer-disclaimer.3427364b.js.map
